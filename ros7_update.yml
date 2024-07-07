@@ -1,6 +1,6 @@
 ---
 - name: RouterOS test with network_cli connection
-  hosts: routers
+  hosts: mikrotik
   gather_facts: false
   tasks:
 
