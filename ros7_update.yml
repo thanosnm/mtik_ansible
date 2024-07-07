@@ -1,12 +1,12 @@
 ## tasks file for system
 
 - name: Set hostname
-  routeros_command:
+  community.routeros.command:
     commands:
       - /system identity set name="{{ inventory_hostname }}"
 
 - name: Update login banner
-  routeros_command:
+  community.routeros.command:
     commands:
       - /system note set show-at-login=yes
       - >
